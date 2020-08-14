@@ -4,7 +4,7 @@
       <span class="btn-left" @click="$router.go(-1)">
         <svg-icon icon-class="white-btn"></svg-icon>
       </span>
-      <div class="header-content">收货地址</div>
+      <div class="header-content">下单地址</div>
     </header>
 
     <section class="address-card">
@@ -15,14 +15,14 @@
         </li>
         <li class="card-info">
           <div class="info-name">
-            <span>我是谁</span>
-            <i>家</i>
+            <span>高级开发工程师</span>
+            <i>工位</i>
           </div>
           <div class="info-address">
-            <span>广东省深圳市宝安区福永地铁站C出口</span>
-            <van-icon name="arrow" color="#D8182D" />
+            <span>武汉3楼3A16-7</span>
+<!--            <van-icon name="arrow" color="#D8182D" />-->
           </div>
-          <span>136778769907</span>
+          <span>18222222222</span>
         </li>
       </ul>
     </section>
@@ -34,14 +34,13 @@
         </li>
         <li class="card-info">
           <div class="info-name">
-            <span>我是谁</span>
-            <i>公司</i>
+            <span>漂亮的HR小姐姐</span>
+            <i>工位</i>
           </div>
           <div class="info-address">
-            <span>广东省深圳市宝安区福永地铁站C出口</span>
-            <van-icon name="arrow" />
+            <span>武汉6楼-3A16-7</span>
           </div>
-          <span>136778769907</span>
+          <span>18222222222</span>
         </li>
       </ul>
     </section>
@@ -53,14 +52,13 @@
         </li>
         <li class="card-info">
           <div class="info-name">
-            <span>我是谁</span>
-            <i>学校</i>
+            <span>厉害的程序员小哥哥</span>
+            <i>工位</i>
           </div>
           <div class="info-address">
-            <span>广东省深圳市宝安区福永地铁站C出口</span>
-            <van-icon name="arrow" />
+            <span>武汉7楼-3A16-7</span>
           </div>
-          <span>136778769907</span>
+          <span>18888888888</span>
         </li>
       </ul>
     </section>

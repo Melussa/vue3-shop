@@ -15,7 +15,7 @@
             <img src="../../assets/image/product/store-headerM.png" class="header-img" />
             <span>店铺名称</span>
           </div>
-          <span>待发货</span>
+          <span>待确认</span>
         </li>
         <li class="order-desc">
           <img />
@@ -68,6 +68,9 @@
         </li>
       </ul>
     </section>
+    <div class="pay-btn">
+      <van-button type="danger" @click="handlePay" size="large">确认完成</van-button>
+    </div>
   </div>
 </template>
 
@@ -78,7 +81,25 @@ export default {
     return {};
   },
   created() {},
-  methods: {}
+  methods: {
+
+    handlePay() {
+      this.$toast.loading({
+        mask: true,
+        duration: 1000, // 持续展示 toast
+        forbidClick: true, // 禁用背景点击
+        loadingType: "spinner",
+        message: "确认完成中..."
+      });
+      setTimeout(() => {
+        // this.$toast({
+        //   mask: false,
+        //   message: "支付成功~"
+        // });
+        this.$router.push("/order/transactionDetails?text=确认&path="+this.$route.path);
+      }, 1300);
+    },
+  }
 };
 </script>
 
@@ -209,6 +230,33 @@ export default {
         padding-top: 14px;
       }
     }
+  }
+}
+
+.pay-btn {
+  position: fixed;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  // padding-top: 50px;
+  // padding-bottom: 30px;
+  .pay-count {
+    display: flex;
+    justify-content: space-between;
+    color: #949497;
+    font-size: 11px;
+    padding-bottom: 12px;
+    i {
+      color: #d8182d;
+      font-weight: 700;
+    }
+  }
+  /deep/ .van-button--danger {
+    background-color: #d8182d;
+    line-height: 44px;
+    font-size: 18px;
   }
 }
 </style>

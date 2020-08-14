@@ -25,27 +25,27 @@
             <van-field v-model="value" placeholder="手机号码" />
           </div>
         </li>
+<!--        <li class="address-item">-->
+<!--          <van-cell title="所在位置" />-->
+<!--          <div class="address-name" @click="show = true">-->
+<!--            <van-field v-model="value" disabled placeholder="请选择省市区" />-->
+<!--            <div>-->
+<!--              <svg-icon icon-class="arrow"></svg-icon>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
         <li class="address-item">
-          <van-cell title="所在地区" />
-          <div class="address-name" @click="show = true">
-            <van-field v-model="value" disabled placeholder="请选择省市区" />
-            <div>
-              <svg-icon icon-class="arrow"></svg-icon>
-            </div>
-          </div>
-        </li>
-        <li class="address-item">
-          <van-cell title="地址" />
+          <van-cell title="所在位置" />
           <div class="address-name">
-            <van-field v-model="value" placeholder="如：道路、门牌号、小区、楼栋号、单元室等" />
+            <van-field v-model="value" placeholder="如：武汉3楼-3A16-7" />
           </div>
         </li>
         <li class="address-item">
           <van-cell title="标签" />
           <div class="address-tags">
-            <van-tag color="#E96258" plain>家</van-tag>
-            <van-tag color="#E96258" plain>学校</van-tag>
-            <van-tag color="#E96258" plain>公司</van-tag>
+            <van-tag color="#E96258" plain>工位</van-tag>
+<!--            <van-tag color="#E96258" plain>学校</van-tag>-->
+<!--            <van-tag color="#E96258" plain>公司</van-tag>-->
           </div>
         </li>
       </ul>
@@ -87,7 +87,7 @@ export default {
     // 分层获取中国地址信息
     getAreas() {
       this.$http.get(`/api/address/getCnAreaList?parentAreaId=${this.parentAreaId}`).then(response =>{
-        console.log('=====response.data==>',response.data.content);  
+        console.log('=====response.data==>',response.data.content);
         // this.areaList = response.data.content
       });
     },

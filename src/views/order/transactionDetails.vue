@@ -12,7 +12,7 @@
           <svg-icon icon-class="pay-success"></svg-icon>
         </li>
         <li class="pay-tips">
-          <span>接单成功</span>
+          <span>{{text || '接单'}}成功</span>
         </li>
       </ul>
       <ul class="list-info">
@@ -25,17 +25,17 @@
 <!--          <span>TOP支付</span>-->
 <!--        </li>-->
         <li class="item-info">
-          <label>支付单号</label>
+          <label>单号</label>
           <span>101010101010101010</span>
         </li>
         <li class="item-info">
-          <label>接单时间</label>
+          <label>{{text || '接单'}}时间</label>
           <span>2020年06月06日 16:36:33</span>
         </li>
       </ul>
       <div class="login-register-btns">
         <router-link class="register-btn" to="/classify" tag="span">完成</router-link>
-        <router-link class="login-btn" to="/order/orderDetail" tag="span">返回待接单</router-link>
+        <router-link class="login-btn" :to="path" tag="span">返回待{{text || '接单'}}</router-link>
       </div>
     </section>
   </div>
@@ -45,9 +45,17 @@
 export default {
   name: "transactionDetails",
   data() {
-    return {};
+    return {
+      text: '',
+      path: '/order/orderDetail'
+    };
   },
-  created() {},
+  created() {
+    if (Object.keys(this.$route.query).length > 0){
+      this.text = this.$route.query.text
+      this.path = this.$route.query.path
+    }
+  },
   methods: {}
 };
 </script>
