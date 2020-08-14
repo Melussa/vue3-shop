@@ -320,10 +320,25 @@
           padding-right: 0;
         }
         .goods-img {
+          position: relative;
           img {
             width: 165px;
             height: 196px;
             border-radius: 8px 8px 0 0;
+          }
+          .want-buy{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: #fff;
+            font-size: 16px;
+            padding: 4px 10px;
+            background-color: rgba(purple, .5);
+            border-radius: 15px;
+            .want-buy-text{
+              margin-left: 5px;
+              vertical-align: middle;
+            }
           }
         }
         .goods-layout {
@@ -342,6 +357,10 @@
           }
           .position{
             float: right;
+            width: 40%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
           }
           .header-img{
             width: 20px;

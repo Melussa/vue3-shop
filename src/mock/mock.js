@@ -64,54 +64,57 @@ let homeData = {
       title: "精选",
       name: "猜你喜欢",
       list: [{
-          name: "美妆护肤品",
+
           img: require('../assets/image/classifyNursing/美妆-1.png'),
           productName: "维修电脑",
           position: "3楼3A223-23",
-          username: "名字",
+          username: "硬件专家",
           forceValue: 5,
-          price: "$525"
+          price: "$525",
+          isWantBuy: '悬赏'
         },
         {
-          name: "美妆护肤品",
+
           img: require('../assets/image/classifyNursing/美妆-2.png'),
-          productName: "维修电脑",
+          productName: "bug修复",
           position: "3楼3A223-23",
-          username: "名字",
+          username: "开发大佬",
           forceValue: 5,
           price: "$525"
         },
         {
-          name: "美妆护肤品",
+
           img: require('../assets/image/classifyNursing/美妆-3.png'),
-          productName: "维修电脑",
+          productName: "千里姻缘一线牵",
           position: "3楼3A223-23",
-          username: "名字",
+          username: "红娘",
           forceValue: 5,
-          price: "$525"
+          price: "$525",
+          isWantBuy: '悬赏'
         },
         {
-          name: "美妆护肤品",
+
           img: require('../assets/image/classifyNursing/美妆-4.png'),
-          productName: "维修电脑",
+          productName: "求合租",
           position: "3楼3A223-23",
           username: "名字",
           forceValue: 5,
-          price: "$525"
+          price: "$525",
+          isWantBuy: '悬赏'
         },
         {
-          name: "美妆护肤品",
+
           img: require('../assets/image/classifyNursing/美妆-5.png'),
-          productName: "维修电脑",
+          productName: "全新转手",
           position: "3楼3A223-23",
           username: "名字",
           forceValue: 5,
           price: "$525"
         },
         {
-          name: "美妆护肤品",
+
           img: require('../assets/image/classifyNursing/美妆-6.png'),
-          productName: "维修电脑",
+          productName: "全新转手",
           position: "3楼3A223-23",
           username: "名字",
           forceValue: 5,
@@ -121,7 +124,7 @@ let homeData = {
         {
           name: "多功能料理机",
           img: require("../assets/image/home/test1.png"),
-          productName: "维修电脑",
+          productName: "闲置转卖",
           position: "3楼3A223-23",
           username: "名字",
           forceValue: 5,
@@ -130,7 +133,7 @@ let homeData = {
         {
           name: "遥控制空调扇",
           img: require("../assets/image/home/test2.png"),
-          productName: "维修电脑",
+          productName: "闲置转卖",
           position: "3楼3A223-23",
           username: "名字",
           forceValue: 5,
@@ -139,7 +142,7 @@ let homeData = {
         {
           name: "时尚双肩包",
           img: require("../assets/image/home/test3.png"),
-          productName: "维修电脑",
+          productName: "闲置转卖",
           position: "3楼3A223-23",
           username: "名字",
           forceValue: 5,
@@ -148,7 +151,7 @@ let homeData = {
         {
           name: "商务行李箱",
           img: require("../assets/image/home/test4.png"),
-          productName: "维修电脑",
+          productName: "闲置转卖",
           position: "3楼3A223-23",
           username: "名字",
           forceValue: 5,
@@ -157,7 +160,7 @@ let homeData = {
         {
           name: "无线消噪耳机",
           img: require("../assets/image/home/test5.png"),
-          productName: "维修电脑",
+          productName: "闲置转卖",
           position: "3楼3A223-23",
           username: "名字",
           forceValue: 5,
@@ -166,7 +169,7 @@ let homeData = {
         {
           name: "无线蓝牙耳机",
           img: require("../assets/image/home/test6.png"),
-          productName: "维修电脑",
+          productName: "闲置转卖",
           position: "3楼3A223-23",
           username: "名字",
           forceValue: 5,

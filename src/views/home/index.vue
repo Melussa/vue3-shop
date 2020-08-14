@@ -32,6 +32,10 @@
             <ul class="goods-content">
               <li v-for="(item,index) in list.list" :key="index">
                 <router-link class="goods-img" tag="div" to="/classify/product">
+                  <div class="want-buy" v-if="item.isWantBuy">
+                    <svg-icon icon-class="chain-cat-member"></svg-icon>
+                    <span  class="want-buy-text">{{item.isWantBuy}}</span>
+                  </div>
                   <img :src="item.img" />
                 </router-link>
                 <div class="goods-layout">

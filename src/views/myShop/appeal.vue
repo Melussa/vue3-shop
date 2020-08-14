@@ -10,6 +10,14 @@
       <van-cell-group>
         <van-field v-model="username" clearable label="商品名称" placeholder="请输入诱人的名称吧" />
         <van-field v-model="phone" label="商品价格" placeholder="请输入合理价格" />
+        <section></section>
+        <section class="radio-box">
+          <div class="label">商品类型：</div>
+          <van-radio-group v-model="radio" class="radio-group">
+            <van-radio name="1" class="radio-item">悬赏（求购）</van-radio>
+            <van-radio name="2" class="radio-item">卖出</van-radio>
+          </van-radio-group>
+        </section>
         <van-field
           v-model="content"
           :autosize="{ minHeight: 150 }"
@@ -35,6 +43,7 @@ export default {
       username: "",
       phone: "",
       content: "",
+      radio: "1",
       fileList: []
     };
   },
@@ -169,5 +178,22 @@ export default {
       font-size: 18px;
     }
   }
+}
+.radio-box{
+  overflow: hidden;
+  color: #323233;
+  font-size: 14px;
+  .radio-group{
+    float: left;
+    margin-left: 20px;
+  }
+  .label{
+    float: left;
+  }
+  .radio-item{
+    float: left;
+    margin-right: 10px;
+  }
+
 }
 </style>
