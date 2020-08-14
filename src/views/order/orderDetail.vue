@@ -13,9 +13,9 @@
         <li class="list-item">
           <div class="store-info">
             <img src="../../assets/image/product/store-headerM.png" class="header-img" />
-            <span>店铺名称</span>
+            <span>3楼3A2-12</span>
           </div>
-          <span>待支付</span>
+          <span>待接单</span>
         </li>
         <li class="item-info">
           <img />

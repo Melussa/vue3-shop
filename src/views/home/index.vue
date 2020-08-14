@@ -36,11 +36,14 @@
                 </router-link>
                 <div class="goods-layout">
                   <div class="goods-title">{{item.productName}}</div>
-                  <span class="goods-div">{{item.title}}</span>
+                  <div class="goods-div">
+                    <img src="../../assets/image/product/store-headerM.png" class="header-img" />
+                    <span class="name-txt">{{item.username}}</span>
+                    <span class="position">{{item.position}}</span>
+                  </div>
                   <div class="goods-desc">
                     <span class="goods-price">
-<!--                      <i>{{item.productCnyPrice}}</i>-->
-                      <span class="force-value">{{item.forceValue}}元</span>
+                      <i>{{item.price}}</i>
                     </span>
                     <span class="add-icon" @click="addToCart($event,item)">订阅
 <!--                      <svg-icon icon-class="add"></svg-icon>-->

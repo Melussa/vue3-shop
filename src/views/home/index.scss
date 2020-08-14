@@ -337,9 +337,24 @@
             font-size: 14px;
             font-weight: 600;
           }
+          .name-txt{
+            float: left;
+          }
+          .position{
+            float: right;
+          }
+          .header-img{
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+            float: left;
+          }
           .goods-div {
             color: #949497;
             font-size: 11px;
+            overflow: hidden;
+            margin: 8px 0;
           }
           .goods-desc {
             background-color: #fff;
